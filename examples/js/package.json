@@ -1,0 +1,19 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "A stunpulse workload in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --format=esm && npx javy-cli compile --wit index.wit -n index dist/index.js -o dist/index.wasm"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "javy": "^0.1.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.0",
+    "javy-cli": "^0.2.0",
+    "typescript": "^5.5.4"
+  }
+}

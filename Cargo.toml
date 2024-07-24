@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["crates/stunpulse-core", "crates/stunpulse-bin", "crates/testing-utilities"]
+default-members = ["crates/stunpulse-bin"]
+
+[workspace.dependencies]
+mio = { version = "0.8", features = ["net", "os-poll"] }

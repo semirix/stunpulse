@@ -1,0 +1,10 @@
+[package]
+name = "testing-utilities"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.39.1", features = ["full"] }
+tokio-postgres = "0.7.11"
+testcontainers = "0.20.1"
+testcontainers-modules = { version = "0.8.0", features = ["postgres"] }

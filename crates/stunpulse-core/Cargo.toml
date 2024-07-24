@@ -1,0 +1,24 @@
+[package]
+name = "stunpulse-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15"
+serde = "1"
+serde_json = "1.0.120"
+tokio = { version = "1.39.1", features = ["full"] }
+tokio-postgres = { version = "0.7.11", features = ["with-serde_json-1"] }
+bb8 = "0.8.5"
+bb8-postgres = "0.8.1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+axum = { version = "0.7.5", features = ["tokio"] }
+thiserror = "1"
+mio = { workspace = true }
+wasmtime-wasi = { version = "23.0.1", features = ["preview1"] }
+wasmtime = "23.0.1"
+futures = "0.3.30"
+
+[dev-dependencies]
+testing-utilities = { path = "../testing-utilities" }
